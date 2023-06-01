@@ -1,3 +1,4 @@
+import { testeService } from './../services/teste.service';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,6 +8,9 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  public frutas: Array<string> | undefined;
+  public fruta!: string;
+
+  constructor(public testeService: testeService) {}
 
 }
